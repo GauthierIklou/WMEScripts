@@ -4,7 +4,7 @@
 // @description     This script create buttons to permalink page on several Maps.
 // @name:fr         GrandLyon-wme
 // @description:fr  Ce script crée des boutons pour vous permettre d'accéder à des cartes externes.
-// @version         0.1
+// @version         0.2
 // @include         https://www.waze.com/editor*
 // @include         https://www.waze.com/*/editor*
 // @exclude         https://www.waze.com/user/*editor/*
@@ -16,7 +16,7 @@
 // @require         https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4-src.js
 // ==/UserScript==
 
-var MapsFr_version = "0.1";
+var MapsFr_version = "0.2";
 
 if ('undefined' == typeof __RTLM_PAGE_SCOPE_RUN__)
 {
@@ -151,10 +151,10 @@ function add_buttons()
     });
     // add new box to left of the map
     var addon = document.createElement("section");
-    addon.id = "GrandLyon-mwe";
+    addon.id = "GrandLyon-wme";
 
     addon.innerHTML =
-        '<b>GrandLyon-mwe ' + MapsFr_version + '</b><br>';
+        '<b>GrandLyon-wme ' + MapsFr_version + '</b><br>';
 
     //alert("Create Tab");
     var userTabs = document.getElementById('user-info');
@@ -162,28 +162,28 @@ function add_buttons()
     var tabContent = document.getElementsByClassName('tab-content', userTabs)[0];
 
     var newtab = document.createElement('li');
-    newtab.innerHTML = '<a title="Maps France" href="#sidepanel-GrandLyon-mwe" data-toggle="tab"><img src="https://www.lyon-entreprises.com/wp-content/uploads/v2h5or-l-400x400.jpg" width="25" height="25"></a>';
+    newtab.innerHTML = '<a title="Maps France" href="#sidepanel-GrandLyon-wme" data-toggle="tab"><img src="https://www.lyon-entreprises.com/wp-content/uploads/v2h5or-l-400x400.jpg" width="25" height="25"></a>';
     navTabs.appendChild(newtab);
 
-    addon.id = "sidepanel-GrandLyon-mwe";
+    addon.id = "sidepanel-GrandLyon-wme";
     addon.className = "tab-pane";
     tabContent.appendChild(addon);
 
-    $("#sidepanel-GrandLyon-mwe").append('<br>');
-    $("#sidepanel-GrandLyon-mwe").append('<center>Cartes de France<br></center>');
-    $("#sidepanel-GrandLyon-mwe").append(btn1);
-    $("#sidepanel-GrandLyon-mwe").append(btn2);
-    $("#sidepanel-GrandLyon-mwe").append(btn3);
-    $("#sidepanel-GrandLyon-mwe").append('<br> <hr> <br>');
-    $("#sidepanel-GrandLyon-mwe").append('<center>Informations Travaux Métropole <br></center>');
-    $("#sidepanel-GrandLyon-mwe").append(btn4);
-    $("#sidepanel-GrandLyon-mwe").append(btn5);
-    $("#sidepanel-GrandLyon-mwe").append(btn9);
-    $("#sidepanel-GrandLyon-mwe").append('<br> <hr> <br>');
-    $("#sidepanel-GrandLyon-mwe").append('<center>Autre <br></center>');
-    $("#sidepanel-GrandLyon-mwe").append(btn6);
-    $("#sidepanel-GrandLyon-mwe").append(btn7);
-    $("#sidepanel-GrandLyon-mwe").append(btn8);
+    $("#sidepanel-GrandLyon-wme").append('<br>');
+    $("#sidepanel-GrandLyon-wme").append('<center>Cartes de France<br></center>');
+    $("#sidepanel-GrandLyon-wme").append(btn1);
+    $("#sidepanel-GrandLyon-wme").append(btn2);
+    $("#sidepanel-GrandLyon-wme").append(btn3);
+    $("#sidepanel-GrandLyon-wme").append('<br> <hr> <br>');
+    $("#sidepanel-GrandLyon-wme").append('<center>Informations Travaux Métropole <br></center>');
+    $("#sidepanel-GrandLyon-wme").append(btn4);
+    $("#sidepanel-GrandLyon-wme").append(btn5);
+    $("#sidepanel-GrandLyon-wme").append(btn9);
+    $("#sidepanel-GrandLyon-wme").append('<br> <hr> <br>');
+    $("#sidepanel-GrandLyon-wme").append('<center>Autre <br></center>');
+    $("#sidepanel-GrandLyon-wme").append(btn6);
+    $("#sidepanel-GrandLyon-wme").append(btn7);
+    $("#sidepanel-GrandLyon-wme").append(btn8);
 
 
 
