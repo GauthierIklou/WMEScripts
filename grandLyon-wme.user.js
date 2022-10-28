@@ -4,7 +4,7 @@
 // @description     This script create buttons to permalink page on several Maps.
 // @name:fr         GrandLyon-wme
 // @description:fr  Ce script crée des boutons pour vous permettre d'accéder à des cartes externes.
-// @version         0.2
+// @version         0.3
 // @include         https://www.waze.com/editor*
 // @include         https://www.waze.com/*/editor*
 // @exclude         https://www.waze.com/user/*editor/*
@@ -16,7 +16,7 @@
 // @require         https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4-src.js
 // ==/UserScript==
 
-var MapsFr_version = "0.2";
+var MapsFr_version = "0.3";
 
 if ('undefined' == typeof __RTLM_PAGE_SCOPE_RUN__)
 {
