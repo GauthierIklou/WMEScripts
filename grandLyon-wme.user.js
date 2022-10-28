@@ -144,9 +144,25 @@ function add_buttons()
     //https://www.inforoute69.fr/
     var btn9 = $('<button style="background-color: #4F89FF; width: 282px;height: 24px;font-size:70%;">InfoRoute69</button>');
     btn9.click(function(){
-
-        var gps = get_gps(0);
         var mapsUrl = 'https://www.inforoute69.fr/';
+        window.open(mapsUrl,'_blank');
+    });
+    // https://twitter.com/wazerhone
+    var btn10 = $('<button style="background-color: #1FA6FF; width: 282px;height: 24px;font-size:70%;">Twitter</button>');
+    btn9.click(function(){
+        var mapsUrl = 'https://twitter.com/wazerhone';
+        window.open(mapsUrl,'_blank');
+    });
+    //https://www.facebook.com/
+    var btn11 = $('<button style="background-color: #0269E3; width: 282px;height: 24px;font-size:70%;">Facebook</button>');
+    btn9.click(function(){
+        var mapsUrl = '#';
+        window.open(mapsUrl,'_blank');
+    });
+    //https://groups.google.com/g/waze-grand-lyon
+    var btn12 = $('<button style="background-color: #4285F4; width: 282px;height: 24px;font-size:70%;">GoogleGrp</button>');
+    btn9.click(function(){
+        var mapsUrl = 'https://groups.google.com/g/waze-grand-lyon';
         window.open(mapsUrl,'_blank');
     });
     // add new box to left of the map
@@ -184,8 +200,9 @@ function add_buttons()
     $("#sidepanel-GrandLyon-wme").append(btn6);
     $("#sidepanel-GrandLyon-wme").append(btn7);
     $("#sidepanel-GrandLyon-wme").append(btn8);
-
-
-
-
+    $("#sidepanel-GrandLyon-wme").append('<br> <hr> <br>');
+    $("#sidepanel-GrandLyon-wme").append('<center>Socials <br></center>');
+    $("#sidepanel-GrandLyon-wme").append(btn10);
+    $("#sidepanel-GrandLyon-wme").append(btn11);
+    $("#sidepanel-GrandLyon-wme").append(btn12);
 }
