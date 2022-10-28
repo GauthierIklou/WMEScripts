@@ -149,19 +149,19 @@ function add_buttons()
     });
     // https://twitter.com/wazerhone
     var btn10 = $('<button style="background-color: #1FA6FF; width: 94px;height: 24px;font-size:70%;">Twitter</button>');
-    btn9.click(function(){
+    btn10.click(function(){
         var mapsUrl = 'https://twitter.com/wazerhone';
         window.open(mapsUrl,'_blank');
     });
     //https://www.facebook.com/
     var btn11 = $('<button style="background-color: #0269E3; width: 94px;height: 24px;font-size:70%;">Facebook</button>');
-    btn9.click(function(){
+    btn11.click(function(){
         var mapsUrl = '#';
         window.open(mapsUrl,'_blank');
     });
     //https://groups.google.com/g/waze-grand-lyon
     var btn12 = $('<button style="background-color: #4285F4; width: 94px;height: 24px;font-size:70%;">GoogleGrp</button>');
-    btn9.click(function(){
+    btn12.click(function(){
         var mapsUrl = 'https://groups.google.com/g/waze-grand-lyon';
         window.open(mapsUrl,'_blank');
     });
