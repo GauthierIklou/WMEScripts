@@ -4,7 +4,7 @@
 // @description     This script create buttons to permalink page on several Maps.
 // @name:fr         GrandLyon-wme
 // @description:fr  Ce script crée des boutons pour vous permettre d'accéder à des cartes externes.
-// @version         0.3
+// @version         0.3.1
 // @include         https://www.waze.com/editor*
 // @include         https://www.waze.com/*/editor*
 // @exclude         https://www.waze.com/user/*editor/*
@@ -16,7 +16,7 @@
 // @require         https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4-src.js
 // ==/UserScript==
 
-var MapsFr_version = "0.3";
+var MapsFr_version = "0.3.1";
 
 if ('undefined' == typeof __RTLM_PAGE_SCOPE_RUN__)
 {
@@ -148,19 +148,19 @@ function add_buttons()
         window.open(mapsUrl,'_blank');
     });
     // https://twitter.com/wazerhone
-    var btn10 = $('<button style="background-color: #1FA6FF; width: 282px;height: 24px;font-size:70%;">Twitter</button>');
+    var btn10 = $('<button style="background-color: #1FA6FF; width: 94px;height: 24px;font-size:70%;">Twitter</button>');
     btn9.click(function(){
         var mapsUrl = 'https://twitter.com/wazerhone';
         window.open(mapsUrl,'_blank');
     });
     //https://www.facebook.com/
-    var btn11 = $('<button style="background-color: #0269E3; width: 282px;height: 24px;font-size:70%;">Facebook</button>');
+    var btn11 = $('<button style="background-color: #0269E3; width: 94px;height: 24px;font-size:70%;">Facebook</button>');
     btn9.click(function(){
         var mapsUrl = '#';
         window.open(mapsUrl,'_blank');
     });
     //https://groups.google.com/g/waze-grand-lyon
-    var btn12 = $('<button style="background-color: #4285F4; width: 282px;height: 24px;font-size:70%;">GoogleGrp</button>');
+    var btn12 = $('<button style="background-color: #4285F4; width: 94px;height: 24px;font-size:70%;">GoogleGrp</button>');
     btn9.click(function(){
         var mapsUrl = 'https://groups.google.com/g/waze-grand-lyon';
         window.open(mapsUrl,'_blank');
