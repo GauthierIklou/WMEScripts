@@ -4,7 +4,7 @@
 // @description     This script create buttons to permalink page on several Maps.
 // @name:fr         GrandLyon-wme
 // @description:fr  Ce script crée des boutons pour vous permettre d'accéder à des cartes externes.
-// @version         0.4
+// @version         0.5
 // @include         https://www.waze.com/editor*
 // @include         https://www.waze.com/*/editor*
 // @exclude         https://www.waze.com/user/*editor/*
@@ -16,7 +16,7 @@
 // @require         https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4-src.js
 // ==/UserScript==
 
-var MapsFr_version = "0.4";
+var MapsFr_version = "0.5";
 
 if ('undefined' == typeof __RTLM_PAGE_SCOPE_RUN__)
 {
@@ -165,6 +165,14 @@ function add_buttons()
         var mapsUrl = 'https://groups.google.com/g/waze-grand-lyon';
         window.open(mapsUrl,'_blank');
     });
+    
+    //https://data.grandlyon.com/jeux-de-donnees/zones-apaisees-metropole-lyon/donnees?map=9.865596971245285/45.73330944580468/5.537498348793292/0/0/2
+    var btn13 = $('<button style="background-color: #4285F4; width: 94px;height: 24px;font-size:70%;">GoogleGrp</button>');
+    btn13.click(function(){
+        var mapsUrl = 'https://data.grandlyon.com/jeux-de-donnees/zones-apaisees-metropole-lyon/donnees?map=' + gps.zoom + '/' + gps.lat + '/' + gps.lon + '/0/0/2';
+        window.open(mapsUrl,'_blank');
+    });
+    
     // add new box to left of the map
     var addon = document.createElement("section");
     addon.id = "GrandLyon-wme";
@@ -200,6 +208,7 @@ function add_buttons()
     $("#sidepanel-GrandLyon-wme").append(btn6);
     $("#sidepanel-GrandLyon-wme").append(btn7);
     $("#sidepanel-GrandLyon-wme").append(btn8);
+    $("#sidepanel-GrandLyon-wme").append(btn13);
     $("#sidepanel-GrandLyon-wme").append('<br> <hr> <br>');
     $("#sidepanel-GrandLyon-wme").append('<center>Socials <br></center>');
     $("#sidepanel-GrandLyon-wme").append(btn10);
